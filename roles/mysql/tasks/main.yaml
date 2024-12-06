@@ -2,8 +2,8 @@
    hosts: mysql
    become: yes
    vars:
-   mysql_root_password: ExpenseApp@1
-   login_host: mysql.kishoreboligarla.shop
+    mysql_root_password: ExpenseApp@1
+    login_host: mysql.kishoreboligarla.shop
    tasks:
    - name: ansible to pymsql
      ansible.builtin.pip:
