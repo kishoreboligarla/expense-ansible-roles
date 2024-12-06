@@ -1,15 +1,16 @@
  - name: mysql configuration
    hosts: mysql
    become: yes
-   vars:
-    mysql_root_password: ExpenseApp@1
-    login_host: mysql.kishoreboligarla.shop
+  #  vars:
+  #   mysql_root_password: ExpenseApp@1
+  #   login_host: mysql.kishoreboligarla.shop
    tasks:
    - name: ansible to pymsql
      ansible.builtin.pip:
       name:
       - PyMySQL
      executable: pip3.9
+
    - name: install Mysql Server
      ansible.builtin.package:
       name: mysql-server
