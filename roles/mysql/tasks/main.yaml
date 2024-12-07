@@ -5,7 +5,7 @@
   vars:
     mysql_root_password: ExpenseApp@1
     login_host: mysql.kishoreboligarla.shop
-tasks:
+  tasks:
 - name: ansible to install pymysql
   ansible.builtin.pip:
     name:
