@@ -1,10 +1,10 @@
 
 - name: mysql configuration
-hosts: mysql
-become: yes
-vars:
-  mysql_root_password: ExpenseApp@1
-  login_host: mysql.daws81s.online
+  hosts: mysql
+  become: yes
+  vars:
+    mysql_root_password: ExpenseApp@1
+    login_host: mysql.daws81s.online
 tasks:
 - name: ansible to install pymysql
   ansible.builtin.pip:
